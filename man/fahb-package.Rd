@@ -12,14 +12,19 @@ using frequentist and Bayesian operating characteristics.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://dtwilson.github.io/fahb/}
-  \item \url{https://github.com/DTWilson/fahb}
-  \item Report bugs at \url{https://github.com/DTWilson/fahb/issues}
+  \item \url{https://lictr.github.io/fahb/}
+  \item \url{https://github.com/lictr/fahb}
+  \item Report bugs at \url{https://github.com/lictr/fahb/issues}
 }
 
 }
 \author{
 \strong{Maintainer}: Duncan Wilson \email{d.t.wilson@leeds.ac.uk} (\href{https://orcid.org/0000-0001-7949-8718}{ORCID}) [copyright holder]
+
+Authors:
+\itemize{
+  \item Duncan Wilson \email{d.t.wilson@leeds.ac.uk} (\href{https://orcid.org/0000-0001-7949-8718}{ORCID}) [copyright holder]
+}
 
 }
 \keyword{internal}

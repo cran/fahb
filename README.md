@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# fahb <a href="https://dtwilson.github.io/fahb/"><img src="man/figures/logo.png" align="right" height="139" alt="tout website" /></a>
+# fahb <a href="https://lictr.github.io/fahb/"><img src="man/figures/logo.png" align="right" height="139" alt="tout website" /></a>
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/DTWilson/fahb/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/DTWilson/fahb/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/lictr/fahb/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lictr/fahb/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/DTWilson/fahb//branch/main/graph/badge.svg)](https://app.codecov.io/gh/DTWilson/fahb)
 <!-- badges: end -->
@@ -65,29 +65,29 @@ design <- fahb_design(problem)
 print(design)
 #> Standard progression criteria
 #> 
-#>     FPR        FNR         n_p          m_p        r_p
-#> 1   0.0 0.82817058 17.81878829 -0.059458005  9.6590446
-#> 11  0.1 0.45825809  9.57670582  1.334793215  6.6483566
-#> 21  0.2 0.31559939  6.90517099  0.182386148  6.0045943
-#> 41  0.4 0.18030282  1.59558082  0.759740721  5.6010379
-#> 51  0.5 0.12835116  2.70338476  1.696370342  4.5998899
-#> 71  0.7 0.05625781  0.14306472  0.904175281  3.5567570
-#> 81  0.8 0.03681067 -0.30186503  0.937890251  2.8416713
-#> 91  0.9 0.02222531 -0.90403448 -0.022824150  1.9307604
-#> 101 1.0 0.00000000  0.01221748  0.008838253 -0.7620012
+#>     FPR        FNR         n_p         m_p        r_p
+#> 1   0.0 0.87800497 14.89113845  5.23821827 11.2983982
+#> 11  0.1 0.47333518  9.75445041 -0.09309377  6.6868158
+#> 21  0.2 0.33766234  5.58934399  0.63584854  6.7071152
+#> 41  0.4 0.18941697  4.14297592  0.66606272  5.3705821
+#> 51  0.5 0.12848853  2.59814424  1.86456234  4.6667348
+#> 71  0.7 0.05733628 -0.15483242  1.23632359  3.6095247
+#> 81  0.8 0.03799392  0.28706465 -0.80286063  3.0726292
+#> 91  0.9 0.01809892 -0.93786254  0.07155125  1.6746750
+#> 101 1.0 0.00000000 -0.05764603 -0.51362184 -0.1510998
 #> 
 #> Bayesian approximation
 #> 
 #>     FPR        FNR      T_p
-#> 1   0.0 1.00000000 1.441843
-#> 11  0.1 0.42366995 3.123216
-#> 21  0.2 0.31309904 3.298833
-#> 41  0.4 0.16335602 3.594781
-#> 51  0.5 0.11543270 3.721615
-#> 71  0.7 0.05723017 3.916746
-#> 81  0.8 0.03653285 4.001302
-#> 91  0.9 0.02139186 4.085859
-#> 101 1.0 0.00000000 4.554172
+#> 1   0.0 1.00000000 1.370305
+#> 11  0.1 0.44639403 3.119537
+#> 21  0.2 0.31749102 3.294461
+#> 41  0.4 0.16869301 3.563093
+#> 51  0.5 0.12047527 3.688038
+#> 71  0.7 0.05692180 3.900445
+#> 81  0.8 0.03481625 4.009772
+#> 91  0.9 0.01782260 4.184695
+#> 101 1.0 0.00000000 4.475193
 #> 
 #> FPR - False Positive Rate
 #> FNR - False Negative Rate

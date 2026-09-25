@@ -4,7 +4,7 @@
 \alias{forecast}
 \title{Generate probabilistic forecasts of trial recruitment}
 \usage{
-forecast(problem, n_sims = 10^4, overwrite = FALSE)
+forecast(problem, n_sims = 10^4, overwrite = FALSE, data_sum = FALSE)
 }
 \arguments{
 \item{problem}{an object of class \code{fahb_problem}.}
@@ -13,6 +13,9 @@ forecast(problem, n_sims = 10^4, overwrite = FALSE)
 
 \item{overwrite}{boolean indicating if we want to overwrite any simulation data
 currently held (defaults to FALSE).}
+
+\item{data_sum}{boolean indicating if we want to return all the information
+needed to run a Bayesian analysis of the recruitment data (defaults to FALSE).}
 }
 \value{
 an object of class \code{fahb_problem}.

@@ -4,7 +4,7 @@ simulate_data <- function(beta_m, beta_s,
                           target_n, m, 
                           internal,
                           t = t,
-                          n_ext = NULL, m_ext = NULL){
+                          n_ext = NULL, m_ext = NULL, data_sum = FALSE){
 
   
   int_t <- t
@@ -49,8 +49,18 @@ simulate_data <- function(beta_m, beta_s,
     r_p <- n_p / sum(df$t)
   }
   
-  # Output the interim data and the time to reach target n
-  return(c(rec_time, n_p, m_p, r_p))
+  if(!data_sum){
+    # Output the interim data and the time to reach target n
+    return(c(rec_time, n_p, m_p, r_p))
+  } else {
+    # include the data needed for a Bayesian analysis
+    open_times <- rep(0, m)
+    rec_nums <- rep(0, m)
+    open_times[df$c] <- df$t
+    rec_nums[df$c] <- df$y
+    return(c(rec_time, n_p, m_p, r_p,
+             open_times, rec_nums))
+  }
 }
 
 cond_sim <- function(m, target_n, m_p,
