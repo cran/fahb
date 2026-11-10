@@ -94,6 +94,10 @@ fahb_analysis <- function(n_pilot, t_pilot,
   beta_0 <- posterior::extract_variable(s, "b_Intercept")
   sd_r <- posterior::extract_variable(s, "sd_c__Intercept")
   
+  # For site setup rates we have a simple conjugate analysis
+  setup_r_a1 <- problem$so_hp_a + m_p
+  setup_r_b1 <- problem$so_hp_b + site_t
+  
   # First deal with cases where not all sites have yet opened
   if(m - m_p > 0){
     
@@ -107,10 +111,6 @@ fahb_analysis <- function(n_pilot, t_pilot,
     # opened
     r <- brms::ranef(fit, summary = F)
     us <- cbind(us, exp(r$c[,1:m_p,1] + beta_0))
-    
-    # For site setup rates we have a simple conjugate analysis
-    setup_r_a1 <- problem$so_hp_a + m_p
-    setup_r_b1 <- problem$so_hp_b + site_t
     
     # We can then generate samples from the posterior of setup rate
     setup_rates <- stats::rgamma(nrow(us), setup_r_a1, setup_r_b1)
